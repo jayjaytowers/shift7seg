@@ -11,7 +11,7 @@ class shift7seg
 		          uint8_t _latchPin,
 				  uint8_t _clkPin);
 		
-		static const uint8_t numbers[10] =               // 7 segment values for decimals 0..9
+		static constexpr uint8_t numbers[10] =               // 7 segment values for decimals 0..9
 		{
 	//TRUTH TABLE        |   0 = segment on
 	   //ABCDEFGH        |   1 = segment off
@@ -27,7 +27,7 @@ class shift7seg
 		B00011001  //9  |
 		};
 		
-		static const uint8_t capital[11] = 
+		static constexpr uint8_t capital[11] = 
 		{
 		B00010001,  //A 0
 		B00000001,  //B 1
@@ -42,7 +42,7 @@ class shift7seg
 		B10000011  //U 10
 		};
 		
-		static const uint8_t lower[9] = 
+		static constexpr uint8_t lower[9] = 
 		{
 		B11000001,  //b 0
 		B11100101,  //c 1
